@@ -1,0 +1,15 @@
+sort1 uses: BUBBLE
+
+How do you know?: This sort takes more time than sort2 but lesser time as compared to sort3.
+As bubble sort takes lesser time than selection sort but more time than merge sort, this is clearly bubble sort.
+
+sort2 uses: MERGE
+
+How do you know?: This sort takes the least running time.
+As merge sort has the lowest running time with a Big O notation of n log(n) , this is clearly merge sort.
+
+sort3 uses: SELECTION
+
+How do you know?: This sort takes the most running time
+As selection sort has the most running time of all sorting algorithms, this is clearly selection sort.
+
