@@ -1,0 +1,10 @@
+1. By using the following SQL query, the audio aura of a person could be determined
+SELECT AVG(energy),AVG(valence),AVG(danceability) FROM songs;
+
+2. The user might have listened to songs having different energies, valence and danceabilities various number of times.
+Although the number of plays of a particular song might be higher, the average does not take this into count and
+uses the top 100 songs to characterize the aura.
+
+A better way to perform the operation would be to calculate the average values of the top songs the user listened to
+by taking into account the number of plays of each song.
+
