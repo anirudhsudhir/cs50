@@ -1,0 +1,50 @@
+body {
+    min-height: 90vh;
+    min-width: 95vw;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.link-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.flex-container {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.heading {
+    font-size: 2rem;
+    font-family:  Georgia, serif;
+    font-style: italic;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#name-submit {
+  background-color: black;
+  border: white;
+  border-radius: 0.5rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+
+a {
+    font-size: 1.1rem;
+    font-family: Georgia, serif;
+    color: black;
+}
+
