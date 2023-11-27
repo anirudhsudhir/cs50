@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+My Stocks
+{% endblock %}
+
+{% block main %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Stock</th>
+      <th>Shares Owned</th>
+      <th>Current Price</th>
+      <th>Total Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for stock in user %}
+    <tr>
+      <td> {{stock.symbol}} </td>
+      <td> {{stock['SUM(quantity)']}}</td>
+      <td> {{stock.current_price | usd}}</td>
+      <td> {{stock.total_value | usd}} </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<div>
+  Remaining Cash: {{current_cash | usd}}
+</div>
+<div>
+  Grand Total: {{grand_value | usd}}
+</div>
+{% endblock %}
